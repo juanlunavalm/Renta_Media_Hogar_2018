@@ -131,7 +131,7 @@ if rmh_desde > rmh_hasta:
     rmh_desde = rmh_hasta
     st.sidebar.write('El importe "Desde" no puede ser mayor al importe "Hasta"')
 
-cols_data = ['MUNICIPIO', 'BARRIO', 'CUSEC', 'Total']
+cols_data = ['BARRIO', 'CUSEC', 'Total']
 data = geo_data[(geo_data['Total'] >= rmh_desde) & (geo_data['Total'] <= rmh_hasta)][cols_data]
 
 hide_dataframe_row_index = """
